@@ -798,7 +798,7 @@ clusinfo ClusteringSCCN(vector<ProcessingBlock> &PB, double ColorTh, double SWTh
 	  //  printf("SW\tm1=%fm2=%fs1=%fs2=%f\n",elem_i[0],elem_j[0],elem_i[1],elem_j[1]); 
 	    double tswval;
 	    int sdof;
-	    if(elem_i[1]==elem_j[1])
+	    if(elem_i[1]==elem_j[1]) // In New vertion (F Test isapplied)
 	    {
 	      tswval = twoSampleTtest_EqualVariance(pb_i.GetSWSize(),pb_j.GetSWSize(),elem_i[0],elem_j[0],elem_i[1],elem_j[1]);
 	      sdof = DegreeofFreedom_EqualVariance(pb_i.GetSWSize(),pb_j.GetSWSize());
@@ -822,7 +822,7 @@ clusinfo ClusteringSCCN(vector<ProcessingBlock> &PB, double ColorTh, double SWTh
 	  //  printf("clr\tm1=%fm2=%fs1=%fs2=%f\n",elem_i[2],elem_j[3],elem_i[3],elem_j[3]);
 	    double tclval;
 	    int cdof;
-	    if(elem_i[3]==elem_j[3])
+	    if(elem_i[3]==elem_j[3])// In New vertion (F Test isapplied)
 	    {
 	      tclval = twoSampleTtest_EqualVariance(pb_i.GetColorBlkSize(),pb_j.GetColorBlkSize(),elem_i[2],elem_j[2],elem_i[3],elem_j[3]);
 	      sdof = DegreeofFreedom_EqualVariance(pb_i.GetColorBlkSize(),pb_j.GetColorBlkSize());
@@ -970,7 +970,7 @@ clusinfo ClusteringSCE(vector<ProcessingBlock> &PB, double ColorTh, double SWTh)
 	      //printf("SW\tm1=%f m2=%f s1=%f s2=%f\n",elem_i[0],elem_j[0],elem_i[1],elem_j[1]); 
 	      double tswval;
 	      int sdof;
-	      if(elem_i[1]==elem_j[1])
+	      if(elem_i[1]==elem_j[1]) // In New vertion (F Test isapplied)
 	      {
 		tswval = twoSampleTtest_EqualVariance(pb_i.GetSWSize(),pb_j.GetSWSize(),elem_i[0],elem_j[0],elem_i[1],elem_j[1]);
 		sdof = DegreeofFreedom_EqualVariance(pb_i.GetSWSize(),pb_j.GetSWSize());
@@ -994,7 +994,7 @@ clusinfo ClusteringSCE(vector<ProcessingBlock> &PB, double ColorTh, double SWTh)
 	     // printf("clr\tm1=%f m2=%f s1=%f s2=%f\n",elem_i[2],elem_j[2],elem_i[3],elem_j[3]);
 	      double tclval;
 	      int cdof;
-	      if(elem_i[3]==elem_j[3])
+	      if(elem_i[3]==elem_j[3]) // In New vertion (F Test isapplied)
 	      {
 		tclval = twoSampleTtest_EqualVariance(pb_i.GetColorBlkSize(),pb_j.GetColorBlkSize(),elem_i[2],elem_j[2],elem_i[3],elem_j[3]);
 		sdof = DegreeofFreedom_EqualVariance(pb_i.GetColorBlkSize(),pb_j.GetColorBlkSize());
