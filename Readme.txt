@@ -8,7 +8,7 @@ CMAKE 2.8
 
 1) Create a build directry.
 2) Go to terminal and go to the build directry.
-3) type-> cmake <sourcecode_path> (in terminal)
+3) type-> cmake <path to cmakelist.txt> (in terminal)
 4) type-> make
 5) the executable within build directry is ready to use.
 
